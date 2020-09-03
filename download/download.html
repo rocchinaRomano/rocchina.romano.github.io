@@ -33,6 +33,49 @@ http://www.w3.org/TR/html4/loose.dtd>
 		background-color: #4CAF50;
 		color: white;
 		}
+		
+		/* Table property */
+		.table3 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size: 14px;
+		border-radius: 10px;
+		border-spacing: 0;
+		text-align: center;
+		}
+		.table3 th {
+		background: #4CAF50;
+		color: white;
+		text-shadow: 0 1px 1px #2D2020;
+		padding: 10px 20px;
+		}
+		.table3 th, .table3 td {
+		border-style: solid;
+		border-width: 0 1px 1px 0;
+		border-color: white;
+		}
+		.table3 th:first-child, .table3 td:first-child {
+		text-align: left;
+		}
+		.table3 th:first-child {
+		border-top-left-radius: 10px;
+		}
+		.table3 th:last-child {
+		border-top-right-radius: 10px;
+		border-right: none;
+		}
+		.table3 td {
+		padding: 10px 20px;
+		background: #ddd;
+		}
+		.table3 tr:last-child td:first-child {
+		border-radius: 0 0 0 10px;
+		}
+		.table3 tr:last-child td:last-child {
+		border-radius: 0 0 10px 0;
+		}
+		.table3 tr,  .table3 td:last-child {
+		border-right: none;
+		}
 		</style>
 		<link rel="icon" href="Rocchina.jpg">
 	</head>
@@ -54,104 +97,27 @@ http://www.w3.org/TR/html4/loose.dtd>
 		<br><br><br>
 		-->
 		
-		<table border="1">
-			<thead>
-				<tr>
-					<!--
-					<th><font color="green">Project Name</font></th>
-					-->
-					<th><font color="green">Description</font></th>
-					<th><font color="green">Download</font></th>
-				</tr>
-			<thead>
-				<tr>
-					<!--
-					<td>
-						<font color = "red">
-							Steganography on PDF files <br><br>
-							Steganografia su PDF
-						</font>
-					</td>
-					-->					
-					<td>
-						<font color = "green"> 
-							<strong>English Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							Steganography on PDF files <br><br>
-						</font>
-						Steganografia su PDF is a software developed 
-						for embedding and extracting a secret message within PDF files.
-						<br><br>
-						<font color = "green"> 
-							<strong>Italian Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							Steganografia su PDF <br><br>
-						</font>
-						</strong>Steganografia su PDF è un'app che 
-						permette di inserire ed estrarre un messaggio segreto a 
-						partire da un file PDF.
-					</td>
-						<th><a class="active" href="https://github.com/rocchinaRomano/steganografiaSuPDF">
-								Download Sotware</a></th>
-					</td>
-				</tr>
-				<tr>
-					<!--
-					<td>
-						<font color = "red">
-							Replacing all images in PDF files <br><br>
-							Sostituzione di tutte le immagini <br> in un file PDF 
-						</font>
-					</td>	
-					-->
-					<td>
-						<font color = "green"> 
-							<strong>English Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							Replacing all images in PDF files <br><br>
-						</font>
-							Here is the code to replace all images in PDF files with a red image,
-							using the iText library for Java.
-						<br><br>
-						<font color = "green"> 
-							<strong>Italian Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							Sostituzione di tutte le immagini in un file PDF  <br><br>
-						</font>
-							Ecco il codice per sostituire tutte le immagini nei file PDF 
-							con un'immagine rossa, usando la libreria iText per Java.
-					</td>
-						<th><a class="active" 
-							href="https://github.com/rocchinaRomano/REPLACING-ALL-IMAGES-IN-PDF-FILES/blob/master/replacingPDFImage/src/replacingpdfimages/ReplacingPDFImage.java">
-								Download Source Code</a></th>
-					</td>
-				</tr>
-				<tr>
-					<!--
-					<td>
-						<font color = "red">
-							THESIS: Steganography on PDF files <br><br>
-							TESI: Steganografia su PDF
-						</font>
-					</td>	
-					-->
-					<td>
-						<font color = "green"> 
-							<strong>English Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							THESIS: Steganography on PDF files <br><br>
-						</font>
-						<strong>Abstract</strong>
+		<table class="table3">
+			<tr>
+				<th>Project Name</th>
+				<th>Description</th>
+				<th>File Type</th>
+				<th>Download</th>
+			</tr>
+			<tr>
+				<td>
+					<font color = 'green'><strong>English Version:</strong></font>
+					<br><br>
+					<font color = 'red'>Steganography on PDF files(THESIS)</font>
+					<br><br><br><br><br><br><br><br>
+					<font color = 'green'><strong>Italian Version:</strong></font>
+					<br><br>
+					<font color = 'red'>Steganografia su PDF(TESI)</font>
+				</td>
+				<td>
+					<font color = 'green'><strong>English Version: </strong></font>
+					<br><br>
+					<strong>Abstract</strong>
 						<br>
 						This Thesis aims to provide a novel steganographic technique
 						for embedding and extracting information inside/from text documents, 
@@ -168,15 +134,10 @@ http://www.w3.org/TR/html4/loose.dtd>
 						<strong><font color="red">NOTE: </font>
 							The PDF file is in italian language!	
 						</strong>
-						<br><br><br>
-						<font color = "green"> 
-							<strong>Italian Version</strong>
-						</font>
-						<br><br>
-						<font color = "red">
-							TESI: Steganografia su PDF <br><br>
-						</font>
-						<strong>Sommario</strong>
+					<br><br><br><br>
+					<font color = 'green'><strong>Italian Version:</strong></font>
+					<br><br>
+					<strong>Sommario</strong>
 						<br>
 						La seguente Tesi ha l’obiettivo di fornire una nuova tecnica steganografica 
 						per l’inserimento e l’estrazione di informazioni in/da documenti testuali,
@@ -191,15 +152,81 @@ http://www.w3.org/TR/html4/loose.dtd>
 						si otterrà il cosiddetto "stego PDF", il quale dovrà essere il più possibile 
 						simile al "cover PDF" e dovrà contenere l’informazione steganografica, che
 						potrà essere estratta dal destinatario.
-					</td>
-					<td>
-						<!--<a href="TESI_rocchinaRomano_SteganografiaSuPDF.pdf"> -->
-						<a class="active" 
-							href="https://drive.google.com/file/d/1s-4OjxWWpI4jPpo8pdirYO5wZFEdTHkY/view?usp=sharing">
-							Download PDF 
-						</a>
-					</td>
-				</tr>
+					<br><br>
+				</td>
+				<td><font color = 'red'>PDF</td>
+				<td>
+					<a class="active" 
+						href="https://drive.google.com/file/d/1s-4OjxWWpI4jPpo8pdirYO5wZFEdTHkY/view?usp=sharing">
+						Download PDF 
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font color = 'green'><strong>English Version:</strong></font>
+					<br><br>
+					<font color = 'red'>Steganography on PDF files</font>
+					<br><br>
+					<font color = 'green'><strong>Italian Version:</strong></font>
+					<br><br>
+					<font color = 'red'>Steganografia su PDF</font>
+				</td>
+				<td>
+					<font color = 'green'><strong>English Version: </strong></font>
+					<br><br>
+					<strong>"Steganography on PDF files"</strong> is a software developed 
+					for embedding and extracting a secret message within PDF files.
+					<br><br><br><br>
+					<font color = 'green'><strong>Italian Version: </strong></font>
+					<br><br>
+					<strong>"Steganografia su PDF"</strong> è un'applicazione desktop che 
+						permette di inserire ed estrarre un messaggio segreto a 
+						partire da un file PDF.
+				</td>
+				<td>
+					<font color = 'red'>Java Desktop Software</font>
+				</td>
+				<td>
+					<a class="active" 
+						href="https://github.com/rocchinaRomano/steganografiaSuPDF">
+						Download Software
+					</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<font color = 'green'><strong>English Version:</strong></font>
+					<br><br>
+					<font color = 'red'>Replacing all images in PDF files</font>
+					<br><br><br><br>
+					<font color = 'green'><strong>Italian Version:</strong></font>
+					<br><br>
+					<font color = 'red'>
+						Sostituzione di tutte le immagini in un file PDF
+					</font>
+				</td>
+				<td>
+					<font color = 'green'><strong>English Version: </strong></font>
+					<br><br>
+					Here is the code to replace all images in PDF files with a red image,
+					using the iText library for Java.
+					<br><br><br><br>
+					<font color = 'green'><strong>Italian Version: </strong></font>
+					<br><br>
+					Ecco il codice per sostituire tutte le immagini nei file PDF 
+					con un'immagine rossa, usando la libreria iText per Java.
+				</td>
+				<td>
+					<font color = 'red'>Java Source Code</font>
+				</td>
+				<td>
+					<a class="active" 
+						href="https://github.com/rocchinaRomano/REPLACING-ALL-IMAGES-IN-PDF-FILES/blob/master/replacingPDFImage/src/replacingpdfimages/ReplacingPDFImage.java">
+						Download Source Code
+					</a>
+				</td>
+			</tr>
 		</table>
 		
 	</body>
