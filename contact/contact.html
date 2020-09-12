@@ -33,6 +33,49 @@ http://www.w3.org/TR/html4/loose.dtd>
 		background-color: #4CAF50;
 		color: white;
 		}
+		
+		/* Table property */
+		.table3 {
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+		font-size: 14px;
+		border-radius: 10px;
+		border-spacing: 0;
+		text-align: center;
+		}
+		.table3 th {
+		background: #4CAF50;
+		color: white;
+		text-shadow: 0 1px 1px #2D2020;
+		padding: 10px 20px;
+		}
+		.table3 th, .table3 td {
+		border-style: solid;
+		border-width: 0 1px 1px 0;
+		border-color: white;
+		}
+		.table3 th:first-child, .table3 td:first-child {
+		text-align: left;
+		}
+		.table3 th:first-child {
+		border-top-left-radius: 10px;
+		}
+		.table3 th:last-child {
+		border-top-right-radius: 10px;
+		border-right: none;
+		}
+		.table3 td {
+		padding: 10px 20px;
+		background: #ddd;
+		}
+		.table3 tr:last-child td:first-child {
+		border-radius: 0 0 0 10px;
+		}
+		.table3 tr:last-child td:last-child {
+		border-radius: 0 0 10px 0;
+		}
+		.table3 tr,  .table3 td:last-child {
+		border-right: none;
+		}
 		</style>
 		<link rel="icon" href="Rocchina.jpg">
 	</head>
@@ -45,21 +88,53 @@ http://www.w3.org/TR/html4/loose.dtd>
 			<a class="active" href="https://rocchinaromano.github.io/">Home Page</a>
 		</div>
 		
-		<ul>
-			<p>
-				<li><strong><a href="mailto:rocchina.romano@yahoo.it">E-mail</a></strong></li>
-			</p>	
-			<p>
-				<li><strong><a href= "https://github.com/rocchinaRomano">GitHub</strong></a></li>
+		<br><br><br>
+		
+		<table class="table3">
+			<tr>
+				<th>
+					<strong>E-mail</strong>
+				</th>
+					
+				<th>
+					<strong>GitHub</strong>
+				</th>
 				
-			</p>
-			<p>
-				<li><strong><a href= "https://www.instagram.com/rocchina.romano/">Instagram</strong></a></li>
-			</p>
-			<p>
-				<li><strong><a href= "https://www.facebook.com/rocchina.romano">Facebook</strong></a></li>
-			</p>
-		</ul>
+				<th>
+					<strong>Instagram</strong>
+				</th>
+				
+				<th>
+					<strong>Facebook</strong>
+				</th>
+			</tr>
+			
+			<tr>
+				<td>
+					<a href="mailto:rocchina.romano@yahoo.it">
+						E-mail
+					</a>
+				</td>
+					
+				<td>
+					<a href= "https://github.com/rocchinaRomano">
+						GitHub
+					</a>
+				</td>
+					
+				<td>
+					<a href= "https://www.instagram.com/rocchina.romano/">
+						Instagram
+					</a>
+				</td>
+				
+				<td>
+					<a href= "https://www.facebook.com/rocchina.romano">
+						Facebook
+					</a>
+				</td>
+			</tr>
+		</table>
 		
 	</body>
     
