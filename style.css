@@ -1,5 +1,11 @@
 /* File CSS*/
 
+@media screen and (min-width: 780px) {
+.full-width-img {
+margin: auto;
+width: 90%;
+}
+
 /* Add a black background color to the top navigation */
 
 .topnav {
