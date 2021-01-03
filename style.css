@@ -92,6 +92,11 @@ ul#contact li {
 	border-right: none;
 }
 
+.img-centrata {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 #FOOTER{
 	float: left;
