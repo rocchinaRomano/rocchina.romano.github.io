@@ -1,0 +1,439 @@
+/* Stile generale */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  position: relative; /* necessario per il posizionamento assoluto del footer */
+  min-height: 100vh; /* imposto un'altezza minima per garantire che il contenuto copra l'intera pagina */
+  background-color: #F5EDDC;
+  font-family: "Roboto", sans-serif;
+}
+
+.fa-check{
+	color: darkgreen;
+}
+
+.fa-xmark{
+	color: red;
+}
+
+.body_alter{
+	background-color: white;
+}
+
+/* Stile header e footer */
+header {
+  background-color: #E94560;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.views-section {
+  position: sticky;
+  bottom: calc(100% - (50px + 30px)); /* l'altezza del footer più il margine superiore */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  top: calc(100vh - (50px + 30px + 100px)); /* l'altezza della sezione più l'altezza della nav bar */
+  background-color: #F5EDDC;
+  padding: 10px; /* spaziatura interna a tua scelta */
+  margin-bottom: 30px; /* margine tra la sezione e il footer */
+  margin-top: 20px;
+  background-color: #FF8787;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #E94560;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  height: auto;
+  margin-top: 20px;
+}
+
+footer + .views-section {
+  margin-top: 20px;
+}
+
+
+.social-box {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #fff;
+}
+
+.social-icons i {
+  margin-right: 5px;
+}
+
+#footer-style li a:hover {
+  color: #FFC4C4;
+}
+
+/*Stile nav*/
+nav {
+  background-color: #FF8787;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #FFC4C4;
+  color: #fff;
+}
+
+nav ul ul {
+  background-color: #FA9494;
+  display: none;
+  position: absolute;
+  top: 100%;
+  padding: 0;
+  width: 100px;
+  left: 0;
+}
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul ul li a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul ul li a:hover {
+  background-color: #1e5128;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Table property */
+.table3 {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	border-radius: 10px;
+	border-spacing: 0;
+	text-align: center;
+}
+
+.table3 th {
+	background: #4CAF50;
+	color: white;
+	text-shadow: 0 1px 1px #2D2020;
+	padding: 10px 20px;
+}
+
+.table3 th, .table3 td {
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	border-color: white;
+}
+
+.table3 th:first-child, .table3 td:first-child {
+	text-align: left;
+}
+
+.table3 th:first-child {
+	border-top-left-radius: 10px;
+}
+
+.table3 th:last-child {
+	border-top-right-radius: 10px;
+	border-right: none;
+}
+
+.table3 td {
+	padding: 10px 20px;
+	background: #ddd;
+}
+
+.table3 tr:last-child td:first-child {
+	border-radius: 0 0 0 10px;
+}
+
+.table3 tr:last-child td:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+.table3 tr,  .table3 td:last-child {
+	border-right: none;
+}
+
+/* Stile wrapper */
+
+/*
+auto-fit indica che deve creare tante colonne/righe quanti sono gli elementi
+nel contenitore;
+
+minmax indica una larghezza/altezza minima di colonne/righe. Se questa grandezza
+minima viene superata la colonna/riga si espande per adattarsi al contenuto,
+altrimenti sarà sempre della sua grandezza minima.
+*/
+
+.wrapper {
+	background-color: #F5EDDC;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+
+.social-box {
+  display: flex;
+  justify-content: center;
+}
+
+.social-box a img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 30px;
+}
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #F1F8E9;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+   border-radius: 10px;
+   font-weight: bold;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.p{
+  margin-bottom: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.div_img {
+  text-align: center;
+}
+
+/*immagini nella grid list*/
+.div_img img {
+  width: 150px;
+  height: 150px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+/*immagini nella modale*/
+.modal_image {
+  width: 150px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.div_modlinks a:not(:last-child) {
+	margin-right: 20px;
+}
+
+section.grid-item {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #4CAF50;
+  border-radius: 10px;
+  transition: 0.4s;
+  margin-bottom: 30px;
+}
+
+section.grid-item:hover {
+  transform: scale(1.2) perspective(1px);
+}
+
+/*modifica il margin right dei grid item tranne per l'ultimo grid-item*/
+section.grid-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+#sitelogo {
+  width: 150px;
+  border-radius: 30%;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5); /* applica un'ombra sfocata */
+}
+
+.item-image {
+  border-radius: 23px;
+  width: 150px;
+  height: 90px;
+  padding-top: 9px;
+  padding-left: 5px;
+  float: left;
+}
+
+/*Usando la max width del device specifico*/
+@media only screen and (max-device-width: 912px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul ul {
+    position: static;
+    display: none;
+    overflow: hidden;
+  }
+
+  nav ul li:hover > ul {
+    height: auto;
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  section.grid-item:not(:last-child) {
+    margin: 0;
+  }
+
+  section.grid-item:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+/*Per quando facciamo manualmente il resize della window*/
+@media only screen and (max-width: 912px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul ul {
+    position: static;
+    display: none;
+    overflow: hidden;
+  }
+
+  nav ul li:hover > ul {
+    height: auto;
+    display: block;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  section.grid-item:not(:last-child) {
+    margin: 0;
+  }
+
+  section.grid-item:not(:first-child) {
+    margin-top: 40px;
+  }
+  
+}
