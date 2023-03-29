@@ -254,8 +254,11 @@ altrimenti sarà sempre della sua grandezza minima.
   color: white;
 }
 
+a{
+  text-decoration: none;
+}
 
-.p{
+p{
   margin-bottom: 10px;
   flex-direction: row;
   flex-wrap: wrap;
