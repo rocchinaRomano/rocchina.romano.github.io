@@ -9,18 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.fa-check{
-	color: darkgreen;
-}
-
-.fa-xmark{
-	color: red;
-}
-
-.body_alter{
-	background-color: white;
-}
-
 /* Stile header e footer */
 header {
   background-color: #333;
@@ -214,6 +202,24 @@ minima viene superata la colonna/riga si espande per adattarsi al contenuto,
 altrimenti sarà sempre della sua grandezza minima.
 */
 
+#education {
+  margin: 20px;
+}
+
+#education h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.transition:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 .wrapper {
 	background-color: #F5EDDC;
   margin-top: 20px;
@@ -229,80 +235,30 @@ altrimenti sarà sempre della sua grandezza minima.
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #4CAF50;
-  color: white;
   width: 40px;
   height: 40px;
   line-height: 40px;
   text-align: center;
+  background-color: #4CAF50;
+  color: white;
   border-radius: 50%;
   z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .back-to-top:hover {
-  cursor: pointer;
+  background-color: #333;
+  color: white;
 }
 
-.social-box {
-  display: flex;
-  justify-content: center;
-}
-
-.social-box a img {
-  width: 30px;
-  height: 30px;
-  margin: 10px 30px;
-}
-
-/* MODAL WINDOW */
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 60rem;
-  background-color: #F1F8E9;
-  padding: 5rem 6rem;
-  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-  transition: all 0.5s;
-   border-radius: 10px;
-   font-weight: bold;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  transition: all 0.5s;
-}
 
 .p{
   margin-bottom: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.btn--close-modal {
-  font-family: inherit;
-  color: inherit;
-  position: absolute;
-  top: 0.5rem;
-  right: 2rem;
-  font-size: 4rem;
-  cursor: pointer;
-  border: none;
-  background: none;
 }
 
 .div_img {
@@ -315,35 +271,6 @@ altrimenti sarà sempre della sua grandezza minima.
   height: 150px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-}
-
-/*immagini nella modale*/
-.modal_image {
-  width: 150px;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
-}
-
-.div_modlinks a:not(:last-child) {
-	margin-right: 20px;
-}
-
-section.grid-item {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 2px 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #4CAF50;
-  border-radius: 10px;
-  transition: 0.4s;
-  margin-bottom: 30px;
-}
-
-section.grid-item:hover {
-  transform: scale(1.2) perspective(1px);
-}
-
-/*modifica il margin right dei grid item tranne per l'ultimo grid-item*/
-section.grid-item:not(:last-child) {
-  margin-right: 60px;
 }
 
 #sitelogo {
@@ -361,6 +288,44 @@ section.grid-item:not(:last-child) {
   padding-top: 9px;
   padding-left: 5px;
   float: left;
+}
+
+section{ 
+  font-size: 16px;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+h1{
+  display: flex;
+  background-color:  #4CAF50;
+  color: white;
+  text-align:center;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.back-to-top:hover {
+  cursor: pointer;
 }
 
 /*Usando la max width del device specifico*/
@@ -390,14 +355,6 @@ section.grid-item:not(:last-child) {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-
-  section.grid-item:not(:last-child) {
-    margin: 0;
-  }
-
-  section.grid-item:not(:first-child) {
-    margin-top: 40px;
-  }
 }
 
 /*Per quando facciamo manualmente il resize della window*/
@@ -426,14 +383,6 @@ section.grid-item:not(:last-child) {
   .wrapper {
     flex-direction: column;
     flex-wrap: nowrap;
-  }
-
-  section.grid-item:not(:last-child) {
-    margin: 0;
-  }
-
-  section.grid-item:not(:first-child) {
-    margin-top: 40px;
   }
   
 }
