@@ -32,7 +32,7 @@ header {
 }
 
 footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -139,56 +139,17 @@ nav ul li:hover > ul {
   display: block;
 }
 
-/* Table property */
-.table3 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-  font-size: 14px;
-  border-radius: 10px;
-  border-spacing: 0;
-  text-align: center;
+.table-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
-.table3 th {
-  background: #4CAF50;
-  color: white;
-  text-shadow: 0 1px 1px #2D2020;
-  padding: 10px 20px;
-}
-
-.table3 th, .table3 td {
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: white;
-}
-
-.table3 th:first-child, .table3 td:first-child {
-  text-align: left;
-}
-
-.table3 th:first-child {
-  border-top-left-radius: 10px;
-}
-
-.table3 th:last-child {
-  border-top-right-radius: 10px;
-  border-right: none;
-}
-
-.table3 td {
-  padding: 10px 20px;
-  background: #ddd;
-}
-
-.table3 tr:last-child td:first-child {
-  border-radius: 0 0 0 10px;
-}
-
-.table3 tr:last-child td:last-child {
-  border-radius: 0 0 10px 0;
-}
-
-.table3 tr,  .table3 td:last-child {
-  border-right: none;
+.table-item {
+  border: 1px solid #4CAF50;
+  padding: 10px;
 }
 
 /* Stile wrapper */
@@ -228,13 +189,12 @@ main {
   max-width:  900px;
 }
 
-section {
+section{ 
   font-size: 16px;
-  text-align: center;
+  text-align:center;
   justify-content: center;
   align-items: center;
   margin: auto;
-  grid-template-rows: auto;
 }
 
 .ul-class{
