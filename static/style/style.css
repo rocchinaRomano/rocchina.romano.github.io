@@ -237,6 +237,11 @@ section {
   grid-template-rows: auto;
 }
 
+.ul-class{
+  list-style: none;
+  text-align: left;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -250,6 +255,8 @@ section {
   border-radius: 10px;
   font-size: 14px; /* Esempio di riduzione della dimensione del carattere */
   text-align:center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .back-to-top {
@@ -283,6 +290,10 @@ p{
   margin-bottom: 10px;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.p_container{
+  text-align: left;
 }
 
 .div_img {
