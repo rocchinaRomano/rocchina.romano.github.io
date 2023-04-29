@@ -132,14 +132,14 @@ nav ul li:hover > ul {
   display: block;
 }
 
-#languageSelect {
+.languageSelect {
   background-color: #4CAF50;
   color: white;
   border: 2px solid white;
   float: right;
 }
 
-#languageSelect select {
+.languageSelect select {
   border: none;
 }
 
