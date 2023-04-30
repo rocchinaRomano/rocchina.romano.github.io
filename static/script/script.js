@@ -9,9 +9,7 @@ function changeLanguage() {
   }
 }
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     var languageSelect = document.getElementById("languageSelect");
     var selectedLanguage = languageSelect.options[languageSelect.selectedIndex].value;
     var lastUpdate = document.getElementById("lastUpdate");
@@ -31,4 +29,4 @@ document.addEventListener("DOMContentLoaded", function() {
             + ", " + currentDate.getFullYear();
       lastUpdate.textContent = "Last Update: " + formattedDate;   
     }
-});
+});*/
