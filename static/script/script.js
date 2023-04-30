@@ -12,23 +12,23 @@ function changeLanguage() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  var languageSelect = document.getElementById("languageSelect");
+    var languageSelect = document.getElementById("languageSelect");
     var selectedLanguage = languageSelect.options[languageSelect.selectedIndex].value;
     var lastUpdate = document.getElementById("lastUpdate");
     var currentDate = new Date();
  
 
-   if (selectedLanguage === "it") {
+    if (selectedLanguage === "it") {
       var monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
              "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
-    var formattedDate = currentDate.getDate() + " " + monthNames[currentDate.getMonth()] + 
+      var formattedDate = currentDate.getDate() + " " + monthNames[currentDate.getMonth()] + 
           " " + currentDate.getFullYear();
-    lastUpdate.textContent = "Ultimo Aggiornamento: " + formattedDate;  
-  } else if (selectedLanguage === "en") {
+      lastUpdate.textContent = "Ultimo Aggiornamento: " + formattedDate;  
+    } else if (selectedLanguage === "en") {
       var monthNames = ["January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"];
       var formattedDate = monthNames[currentDate.getMonth()] + " " + currentDate.getDate() 
             + ", " + currentDate.getFullYear();
-    lastUpdate.textContent = "Last Update: " + formattedDate;   
+      lastUpdate.textContent = "Last Update: " + formattedDate;   
     }
 });
