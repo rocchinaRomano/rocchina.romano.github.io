@@ -33,4 +33,7 @@ function updateLastUpdate() {
 
 window.onload = function() {
   updateLastUpdate();
+  console.log(updateLastUpdate);
 }
+
+console.log(updateLastUpdate);
