@@ -9,31 +9,26 @@ function changeLanguage() {
   }
 }
 
-function updateLastUpdate() {
-	var languageSelect = document.getElementById("languageSelect");
-  	var selectedLanguage = languageSelect.options[languageSelect.selectedIndex].value;
-  	var lastUpdate = document.getElementById("lastUpdate");
-  	var currentDate = new Date();
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var languageSelect = document.getElementById("languageSelect");
+    var selectedLanguage = languageSelect.options[languageSelect.selectedIndex].value;
+    var lastUpdate = document.getElementById("lastUpdate");
+    var currentDate = new Date();
  
+
    if (selectedLanguage === "it") {
-   		var monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
-		   			 "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
-		var formattedDate = currentDate.getDate() + " " + monthNames[currentDate.getMonth()] + 
-					" " + currentDate.getFullYear();
-		lastUpdate.textContent = "Ultimo Aggiornamento: " + formattedDate;	
-	} else if (selectedLanguage === "en") {
-    	var monthNames = ["January", "February", "March", "April", "May", "June",
+      var monthNames = ["Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
+             "Luglio", "Agosto", "Settembre", "Ottobre", "Novembre", "Dicembre"];
+    var formattedDate = currentDate.getDate() + " " + monthNames[currentDate.getMonth()] + 
+          " " + currentDate.getFullYear();
+    lastUpdate.textContent = "Ultimo Aggiornamento: " + formattedDate;  
+  } else if (selectedLanguage === "en") {
+      var monthNames = ["January", "February", "March", "April", "May", "June",
                     "July", "August", "September", "October", "November", "December"];
-  		var formattedDate = monthNames[currentDate.getMonth()] + " " + currentDate.getDate() 
-  					+ ", " + currentDate.getFullYear();
-		lastUpdate.textContent = "Last Update: " + formattedDate;		
-  	}
-  
-}
-
-window.onload = function() {
-  updateLastUpdate();
-  console.log(updateLastUpdate);
-}
-
-console.log(updateLastUpdate);
+      var formattedDate = monthNames[currentDate.getMonth()] + " " + currentDate.getDate() 
+            + ", " + currentDate.getFullYear();
+    lastUpdate.textContent = "Last Update: " + formattedDate;   
+    }
+});
